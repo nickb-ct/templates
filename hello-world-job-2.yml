@@ -1,18 +1,7 @@
-parameters:
-  - name: environment
-    displayName: environment
-    type: string
-
-- deployment:
-  displayName: 'Deployment'
-  environment: ${{ parameters.environment }}
-  strategy:
-    runOnce:
-      deploy:
-        steps:
-          - task: PowerShell@2
-            displayName: 'Hello world'
-            inputs:
-              targetType: 'inline'
-              script: |
-                echo "hello world"
+steps:
+- task: PowerShell@2
+  displayName: 'Hello world'
+    inputs:
+      targetType: 'inline'
+      script: |
+        echo "hello world"
