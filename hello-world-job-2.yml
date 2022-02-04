@@ -3,7 +3,6 @@ parameters:
     displayName: environment
     type: string
 
-jobs:
 - deployment:
   displayName: 'Deployment'
   environment: ${{ parameters.environment }}
