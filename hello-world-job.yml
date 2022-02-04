@@ -17,3 +17,4 @@ jobs:
               targetType: 'inline'
               script: |
                 echo "hello world"
+          - template: hello-world-job-2.yml
